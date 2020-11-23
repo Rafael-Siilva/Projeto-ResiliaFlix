@@ -5,10 +5,10 @@ class ModelResiliaFlix {
 
     }
 
-    buscarDados() {
+    buscarDados(t) {
 
         //nome filme procurado
-        let t = "moana";
+
         let apiKey = "79c661bb";
 
         let url = `http://www.omdbapi.com/`
