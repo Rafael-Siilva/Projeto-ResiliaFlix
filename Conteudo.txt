@@ -1,2 +1,7 @@
 foi
+<<<<<<< HEAD
 foi - Mariane
+=======
+
+hola sou normita
+>>>>>>> 2e3f425c9d480cc1529548f21079a4ae34df1221
