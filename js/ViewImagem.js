@@ -3,7 +3,7 @@ class ViewImagem {
 
     RecebeModelo(ModelFilmes) {
         let texto = document.createElement('article')
-        texto.innerHTML = `<h1>${ModelFilmes.getTitulo()}</h1>
+        texto.innerHTML = `<h1 >${ModelFilmes.getTitulo()}</h1>
                             <p>${ModelFilmes.getAno()}</p>
                             <p>${ModelFilmes.getClassificacao()}</p>
                             <p>${ModelFilmes.getDuracao()}</p>

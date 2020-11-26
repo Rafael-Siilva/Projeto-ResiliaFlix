@@ -1,25 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 header {
     font-family: 'Lobster Two', cursive;
-    font-size: 35px;
     background-color: #212529;
 }
 
-.nav-link {
-    background-color: #212529;
+.imagem-pesquisa {
+    width: 100%;
+}
+
+.botao-pesquisa {
+    width: 180px;
+    z-index: 1;
+}
+
+.t {
+    width: 182px;
+    background: #f5ce0e;
+    position: absolute;
 }
 
 .letter-color {
-    color: #fddb3a !important;
+    color: rgba(255, 255, 255, 0.973) !important;
+    font-family: 'Crete Round', serif;
+    font-size: 17px;
 }
 
 .navbar-brand {
-    font-size: 45px;
-    color: #fddb3a !important;
+    font-size: 33px;
+    color: #f5ce0e !important;
 }
 
 body {
     /* background-image: Linear-gradient(To Top, #222831, #222831); */
     background: #222831;
+    font-family: 'Crete Round', serif;
 }
 
 .navbar-toggler {
@@ -44,6 +58,7 @@ body {
 
 .cor-especial {
     color: #fddb3a;
+    font-size: 25px;
 }
 
 .botao-cor-especial {
@@ -52,7 +67,7 @@ body {
 }
 
 .borda-cor-especial {
-    border-color: #fddb3a;
+    border-color: #222831;
 }
 
 .card-posicao-imagem {
@@ -62,5 +77,5 @@ body {
 }
 
 .color {
-    color: #eeeeee;
+    color: #9b9b9b;
 }

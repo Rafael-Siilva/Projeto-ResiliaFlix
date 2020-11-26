@@ -1,11 +1,11 @@
 class ViewBuscaFilme {
     pequisaFilme(result) {
-        let img = document.getElementById('imagem')
+        let img = document.getElementById('ano')
         let titulo = document.getElementById('titulo')
         let ano = document.getElementById('ano')
-        titulo.textContent = `Titulo: ${result.getTitulo()}`
-        img.innerHTML = `<img src="" alt="">`
-        ano.textContent = `Ano: ${result.getAno()} ${result.getClassificacao()}  ${result.getDuracao()}`
+        titulo.textContent = `${result.getTitulo()}`
+        img.innerHTML = `<img src="${result.getPoster()}" alt="" class="imagem-pesquisa">`
+
 
     }
 
