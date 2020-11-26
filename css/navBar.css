@@ -3,7 +3,11 @@
     color: #Fddb3a;
     font-family: 'Lobster', cursive;
     font-family: 'Lobster Two', cursive;
-    font-size: 33px;
+    font-size: 30px;
+}
+
+.tela-principal {
+    background-color: #222831;
 }
 
 h5 {
