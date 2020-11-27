@@ -12,7 +12,7 @@ class ViewImagem {
 
         let texto = document.createElement('article')
         texto.innerHTML = `<div class="media" style="padding: 14px">
-                            <img class="align-self-center mr-3" src=${ModelFilmes.getPoster()} alt="Generic placeholder image">
+                            <img class="align-self-center mr-3" width=300px height=490px src=${ModelFilmes.getPoster()} alt="Generic placeholder image">
                             <div class="media-body">
                             <h1 class="mt-0 text-light">${ModelFilmes.getTitulo()}</h1>
                             <p class=text-light>Ano: ${ModelFilmes.getAno()}</p>
@@ -24,9 +24,8 @@ class ViewImagem {
                             <p class=text-light>Enredo: ${ModelFilmes.getEnredo()}</p>
                             <p class=text-light>País: ${ModelFilmes.getPais()}</p>
                             <p class=text-light>Premios: ${ModelFilmes.getPremios()}</p>
-                            </div>
-                            </div>
-                            <button type="button" class="btn btn-secondary btn-lg bg-dark" style="margin-left: 323px;"><svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            
+                            <button type="button" class="btn btn-secondary btn-lg bg-dark"><svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
             <path d="M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
           </svg>  Assista agora</button>
         <button type="button" class="btn btn-secondary btn-lg bg-dark"><svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -35,7 +34,9 @@ class ViewImagem {
               </svg>  Baixar</button>
         <button type="button" class="btn btn-secondary btn-lg bg-dark"><svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-              </svg> Minha Lista</button>`
+              </svg> Minha Lista</button>
+              </div>
+              </div>`
 
         a.appendChild(texto);
 
