@@ -9,7 +9,11 @@ header {
 }
 
 .td {
-    margin-top: 77px;
+    margin-top: 70px;
+}
+
+.tf {
+    margin-top: 30px;
 }
 
 .botao-pesquisa {
@@ -89,6 +93,32 @@ body {
     height: 200px;
 }
 
-.color {
-    color: #9b9b9b;
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.034);
+    color: #B5B5B5;
+    text-decoration: none;
+}
+
+div.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+}
+
+div.rodape p {
+    color: #B5B5B5;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.icone {
+    padding-right: 10px;
+}
+
+.as {
+    text-decoration: none;
+    color: #B5B5B5;
 }

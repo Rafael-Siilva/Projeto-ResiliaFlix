@@ -1,8 +1,8 @@
 class ModelResiliaFlix {
     constructor() {
         this._imagem = "";
-        this._titulo = "";
-        this._ano = "";
+        this._titulo = "Titulo não encontrado"
+        this._ano = "Sem ano"
         this._classificacao = "";
         this._duracao = "";
         this._genero = "";
@@ -43,19 +43,20 @@ class ModelResiliaFlix {
 
     }
 
-    atualizaDados(dados) {
-        this._imagem = dados.Poster;
-        this._titulo = dados.Title;
-        this._ano = dados.Year;
-        this._classificacao = dados.Rated;
-        this._duracao = dados.Runtime;
-        this._genero = dados.Genre;
-        this._diretor = dados.Director;
-        this._atores = dados.Actors;
-        this._enredo = dados.Plot;
-        this._idioma = dados.Language;
-        this._país = dados.Country;
-        this._premios = dados.Awards;
+    atualizaDados(x) {
+
+        this._imagem = x.Poster;
+        this._titulo = x.Title
+        this._ano = x.Year
+        this._classificacao = x.Rated;
+        this._duracao = x.Runtime;
+        this._genero = x.Genre;
+        this._diretor = x.Director;
+        this._atores = x.Actors;
+        this._enredo = x.Plot;
+        this._idioma = x.Language;
+        this._país = x.Country;
+        this._premios = x.Awards;
     }
 
     //conteudo vindo da API
@@ -70,7 +71,9 @@ class ModelResiliaFlix {
     getAno() {
         return this._ano
     }
-
+    getPoster() {
+        return this._imagem
+    }
     getClassificacao() {
         return this._classificacao
     }
@@ -102,13 +105,4 @@ class ModelResiliaFlix {
     getPremios() {
         return this._premios
     }
-
 }
-
-
-
-
-
-let p = new ModelResiliaFlix()
-p.buscarDados()
-console.log(p.getTitulo())
