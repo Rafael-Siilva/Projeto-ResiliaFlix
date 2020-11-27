@@ -122,3 +122,11 @@ div.rodape p {
     text-decoration: none;
     color: #B5B5B5;
 }
+
+section h2 {
+    padding-left: 4.6%;
+    margin-bottom: 13px;
+    color: rgba(255, 255, 255, 0.973) !important;
+    font-family: 'Crete Round', serif;
+    font-size: 22px;
+}

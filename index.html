@@ -12,13 +12,13 @@
 
 <body>
     <!--NAV_BAR-->
-    <header class="fixed-top">
-        <div class="container d-flex"></div>
+    <header class="fixed-top ">
+        <div class="container d-flex  gf"></div>
         <nav class="navbar navbar-expand-lg navbar-light nav-letter">
-
             <a class="navbar-brand ml-3" href="index.html">ResiliaFlix</a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
         </button>
             <div class="collapse navbar-collapse  justify-content-end mr-3" id="navbarNav">
                 <ul class="navbar-nav">
@@ -35,23 +35,23 @@
                         <a class="nav-link letter-color" href="#">Contato</a>
                     </li>
                 </ul>
-            </div>
-            <!-- botao pesquisa -->
-            <div class="botao-pesquisa font">
-                <div class="input-group ">
-                    <input type="text" class="form-control" placeholder="Pesquisar" autocomplete="off" data-toggle="collapse" data-target="#navbarToggleExternalContent" onkeyup="controlador.adiciona()" id="filme">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-secondary bg-dark" type="button" id="button-addon2"><img src="img/pesquisa.png" alt=""></button>
+                <!-- botao pesquisa -->
+                <div class="botao-pesquisa font">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Pesquisar" autocomplete="off" data-toggle="collapse" data-target="#navbarToggleExternalContent" onkeyup="controlador.adiciona()" id="filme">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-dark" type="button" id="button-addon2"><img src="img/pesquisa.png" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="collapse t " id="navbarToggleExternalContent">
+                        <div class=" p-1">
+                            <h5 class="letter-color" id="titulo"></h5>
+                            <span class="letter-color" id="ano"></span>
+                        </div>
                     </div>
                 </div>
-                <div class="collapse t " id="navbarToggleExternalContent">
-                    <div class=" p-1">
-                        <h5 class="letter-color" id="titulo"></h5>
-                        <span class="letter-color" id="ano"></span>
-                    </div>
-                </div>
+                <!-- termina -->
             </div>
-
         </nav>
         </div>
     </header>
@@ -110,6 +110,7 @@
         <!----INSERÇÂO DE CARDS-->
 
         <section class="container-fluid" id="filmes">
+            <h2>Filmes do ResiliaFlix</h2>
             <div class="row justify-content-center">
                 <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4 ">
                     <img src="src/carroussel/bladeRunner.jpg" class="card-img-top card-posicao-imagem" alt="..." />
