@@ -1,8 +1,8 @@
 class ModelResiliaFlix {
     constructor() {
         this._imagem = "";
-        this._titulo = "Titulo não encontrado"
-        this._ano = "Sem ano"
+        this._titulo = "titulo não encontrado";
+        this._ano = "ano";
         this._classificacao = "";
         this._duracao = "";
         this._genero = "";
@@ -47,7 +47,7 @@ class ModelResiliaFlix {
 
         this._imagem = x.Poster;
         this._titulo = x.Title
-        this._ano = x.Year
+        this._ano = x.Year;
         this._classificacao = x.Rated;
         this._duracao = x.Runtime;
         this._genero = x.Genre;
@@ -64,7 +64,7 @@ class ModelResiliaFlix {
         return this._titulo
     }
 
-    get getAno() {
+    getAno() {
         return this._ano
     }
     getPoster() {

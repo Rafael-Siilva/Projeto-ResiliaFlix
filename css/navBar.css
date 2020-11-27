@@ -5,17 +5,3 @@
     font-family: 'Lobster Two', cursive;
     font-size: 30px;
 }
-
-.tela-principal {
-    background-color: #222831;
-}
-
-h5 {
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-
-.botao-assista {
-    margin: 70px;
-}

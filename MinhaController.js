@@ -1,14 +1,16 @@
 class Controla {
     constructor() {}
 
-    NovoFilme() {
+    NovoFilme(Filme) {
         console.log('tô aqui')
-        let artigo = document.getElementById('artigo')
-        let Model = new ModelFilmes();
-        Model.buscarInformacoes(artigo.value);
+        console.log(Filme)
+        let artigo = document.getElementById('a')
+        artigo.innerHTML = `<p class="color"> ${Filme}</p>`
+            // let Model = new ModelFilmes();
+            // Model.buscarInformacoes(artigo.value);
 
-        let visual = new Visualiza();
-        visual.RecebeModelo(Model);
+        // let visual = new Visualiza();
+        // visual.RecebeModelo(Model);
 
     }
 }

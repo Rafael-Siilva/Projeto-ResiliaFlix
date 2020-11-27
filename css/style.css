@@ -1,0 +1,67 @@
+header {
+    font-family: 'Lobster Two', cursive;
+    font-size: 35px;
+    background-color: #212529;
+}
+
+.nav-link {
+    background-color: #212529;
+}
+
+.letter-color {
+    color: #fddb3a !important;
+}
+
+.navbar-brand {
+    font-size: 45px;
+    color: #fddb3a !important;
+}
+
+body {
+    /* background-image: Linear-gradient(To Top, #222831, #222831); */
+    /* background: #222831; */
+    background: white;
+}
+
+.navbar-toggler {
+    color: #fddb3a;
+}
+
+.card-largura {
+    width: 18rem;
+}
+
+.imagem-carroussel {
+    object-position: 0 5%;
+    object-fit: cover;
+    height: 400px;
+}
+
+.fonte-titulo {
+    font-family: 'Lobster Two', cursive;
+    color: #fddb3a;
+    font-size: 30px;
+}
+
+.cor-especial {
+    color: #fddb3a;
+}
+
+.botao-cor-especial {
+    background-color: #222831;
+    color: #eeeeee;
+}
+
+.borda-cor-especial {
+    border-color: #fddb3a;
+}
+
+.card-posicao-imagem {
+    object-position: 0 15%;
+    /*object-fit: cover;*/
+    height: 200px;
+}
+
+.color {
+    color: #eeeeee;
+}
