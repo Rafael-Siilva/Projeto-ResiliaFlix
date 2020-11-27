@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+                 <!-- Tags rqueridas -->
+
+                 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+                 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+                 <title>Cadastrar</title>
+         
+                 <!-- Icons -->
+                 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+                 <!-- Bootstrap CSS -->
+                 <link rel="stylesheet" type="text/css" href="css/styles.css">
+         
+                 <!-- CSS -->
+         
+                 <link rel="stylesheet" type="text/css" href="css/livre.css">
+                
+    </head>
+
+
+    <body>
+
+            <main>
+
+                <body class="bg-success">
+                    <div id="layoutAuthentication">
+                        <div id="layoutAuthentication_content">
+                            <main>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-7" >
+                                            <div class="card shadow-lg border-0 rounded-lg mt-5">
+                                                <div class="card-header"><h3 class="text-center font-weight-light my-4">Cadastro de Proprietário</h3></div>
+                                                <div class="card-body">
+
+                                                    <!-- COMEÇO DO FORM -->
+
+                                                    <form action="cadastrarProprietario" method="post">
+                                                      
+                                                        <div class="form-row">
+                                                            <div class="col-md-12"><h5 class="font-weight-light my-4">Dados do Usuário</h5></div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputFirstName">Nome </label>
+                                                                    <input class="form-control py-3" id="nomeUsuario" name="nomeUsuario" type="text" placeholder="Digite seu Nome" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Sobrenome</label>
+                                                                    <input class="form-control py-3" id="sobrenomeUsuario" name="sobrenomeUsuario" type="text" placeholder="Digite seu Sobrenome" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                       
+                                                        <div class="form-group">
+                                                            <label class="small mb-1" for="inputEmailAddress">Email</label>
+                                                            <input class="form-control py-3" id="emailUsuario" name="emailUsuario" type="email" aria-describedby="emailHelp" placeholder="Digite seu Email" />
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputPassword">Senha</label>
+                                                                    <input class="form-control py-3" id="senha" name="senha" type="password" placeholder="Digite sua Senha" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputConfirmPassword">Confirme sua Senha</label>
+                                                                    <input class="form-control py-3" id="confirmaSenha" name="confirmaSenha" type="password" placeholder="Repita sua Senha" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                        
+                                                        <div class="form-row">
+                                                            <div class="col-md-12"><h5 class="text font-weight-light my-4">Dados Pessoais</h5></div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">CPF/CNPJ</label>
+                                                                    <select id="cpfCnpjUsuario" name="cpfCnpjUsuario" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>CPF</option>
+                                                                        <option>CNPJ</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputFirstName">Número do Documento</label>
+                                                                    <input class="form-control py-3" id="numeroCpfCnpjUsuario" name="numeroCpfCnpjUsuario" type="text" placeholder="" />
+                                                                </div>
+                                                            </div>
+
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Identidade</label>
+                                                                    <select id="naturalizacaoUsuario" name="naturalizacaoUsuario" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>RG</option>
+                                                                        <option>RNE</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName"></label>
+                                                                    <input class="form-control py-3" id="naturalizacaoDocumento" name="naturalizacaoDocumento" type="text" placeholder="Nº do Documento" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Órgão Expedidor</label>
+                                                                    <input class="form-control py-3" id="orgaoDocumento" name="orgaoDocumento" type="text" placeholder="" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="date">Data de Emissão</label>
+                                                                    <input class="form-control py-3" id="emissaoDocumento" name="emissaoDocumento" type="date" placeholder="dd/mm/aaaa" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Sexo</label>
+                                                                    <select id="sexo" name="sexo" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>Masculino</option>
+                                                                        <option>Feminino</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="date">Data de Nascimento</label>
+                                                                    <input class="form-control py-3" id="nascimentoUsuario" name="nascimentoUsuario" type="date" placeholder="dd/mm/aaaa" />
+                                                                </div>
+                                                            </div>    
+
+                                                        </div>
+
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Nacionalidade</label>
+                                                                    <select id="nacionalidadeUsuario" name="nacionalidadeUsuario" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>Afeganistão</option>
+                                                                        <option>Albânia</option>
+                                                                        <option>Argélia</option>
+                                                                        <option>Andorra</option>
+                                                                        <option>Angola</option>
+                                                                        <option>Antígua e Barbuda</option>
+                                                                        <option>Argentina</option>
+                                                                        <option>Armênia</option>
+                                                                        <option>Aruba</option>
+                                                                        <option>Austrália</option>
+                                                                        <option>Áustria</option>
+                                                                        <option>Azerbaijão</option>
+                                                                        <option>Bahamas</option>
+                                                                        <option>Bangladesh</option>
+                                                                        <option>Barbados</option>
+                                                                        <option> Burundi</option>
+                                                                        <option> Bélgica</option>
+                                                                        <option> Benim</option>
+                                                                        <option> Bermudas</option>
+                                                                        <option> Butão</option>
+                                                                        <option> Bósnia e Herzegovina</option>
+                                                                        <option> Belize</option>
+                                                                        <option> Bielorussia</option>
+                                                                        <option> Bolívia</option>
+                                                                        <option> Botswana</option>
+                                                                        <option> Brasil</option>
+                                                                        <option>Bahrein</option>
+                                                                        <option> Brunei</option>
+                                                                        <option> Bulgária</option>
+                                                                        <option> Burkina Faso</option>
+                                                                        <option> República Centro-Africana</option>
+                                                                        <option>Camboja</option>
+                                                                        <option> Canadá</option>
+                                                                        <option> Ilhas Cayman</option>
+                                                                        <option> República do Congo</option>
+                                                                        <option>Chade</option>
+                                                                        <option> Chile</option>
+                                                                        <option>China</option>
+                                                                        <option>Costa do Marfim</option>
+                                                                        <option>Camarões</option>
+                                                                        <option>República Democrática do Congo</option>
+                                                                        <option>Ilhas Cook</option>
+                                                                        <option>Colômbia</option>
+                                                                        <option>Comores</option>
+                                                                        <option>Cabo Verde </option>
+                                                                        <option>Costa Rica</option>
+                                                                        <option>Croácia</option>
+                                                                        <option>Cuba</option>
+                                                                        <option>Chipre</option>
+                                                                        <option>Chéquia</option>
+                                                                        <option>Dinamarca</option>
+                                                                        <option>Djibouti</option>
+                                                                        <option>Dominica</option>
+                                                                        <option>República Dominicana</option>
+                                                                        <option>Equador</option>
+                                                                        <option>Egito</option>
+                                                                        <option>Eritreia</option>
+                                                                        <option>El Salvador</option>
+                                                                        <option>Espanha</option>
+                                                                        <option>Estónia</option>
+                                                                        <option>Etiópia</option>
+                                                                        <option>Fiji</option>
+                                                                        <option>Finlândia</option>
+                                                                        <option>França</option>
+                                                                        <option>Estados Federados da Micronésia</option>
+                                                                        <option>Gabão</option>
+                                                                        <option>Gâmbia</option>
+                                                                        <option>Reino Unido</option>
+                                                                        <option>Inglaterra</option>
+                                                                        <option>Irlanda do Norte</option>
+                                                                        <option>Escócia</option>
+                                                                        <option>Países de Gales</option>
+                                                                        <option>Guiné-Bissau</option>
+                                                                        <option>Geórgia</option>
+                                                                        <option>Guiné Equatorial</option>
+                                                                        <option>Alemanha</option>
+                                                                        <option>Gana</option>
+                                                                        <option>Grécia</option>
+                                                                        <option>Granada</option>
+                                                                        <option>Guatemala</option>
+                                                                        <option>Guiné</option>
+                                                                        <option>Guam</option>
+                                                                        <option>Guiana</option>
+                                                                        <option>Haiti</option>
+                                                                        <option>Hong Kong</option>
+                                                                        <option>Honduras</option>
+                                                                        <option>Hungria</option>
+                                                                        <option>Indonésia</option>
+                                                                        <option>Índia</option>
+                                                                        <option>Irão</option>
+                                                                        <option>Irlanda</option>
+                                                                        <option>Iraque</option>
+                                                                        <option>Islândia</option>
+                                                                        <option>Israel</option>
+                                                                        <option>Ilhas Virgens Americanas</option>
+                                                                        <option>Itália</option>
+                                                                        <option>Ilhas Virgens Britânicas</option>
+                                                                        <option>Jamaica</option>
+                                                                        <option>Jordânia</option>
+                                                                        <option>Japão</option>
+                                                                        <option>Cazaquistão</option>
+                                                                        <option>Quênia</option>
+                                                                        <option>Quirguistão</option>
+                                                                        <option>Kiribati</option>
+                                                                        <option>Coreia do Sul</option>
+                                                                        <option>Kosovo</option>
+                                                                        <option>Arábia Saudita</option>
+                                                                        <option>Kuwait</option>
+                                                                        <option>Laos</option>
+                                                                        <option>Nova Zelândia</option>
+                                                                        <option>Omã</option>
+                                                                        <option>Paquistão</option>
+                                                                        <option>Panamá</option>
+                                                                        <option>Paraguai</option>
+                                                                        <option>Peru</option>
+                                                                        <option>Filipinas</option>
+                                                                        <option>Palestina</option>
+                                                                        <option>Palau</option>
+                                                                        <option>Papua-Nova Guiné</option>
+                                                                        <option>Polónia</option>
+                                                                        <option>Portugal</option>
+                                                                        <option>Coreia do Norte</option>
+                                                                        <option>Porto Rico</option>
+                                                                        <option>Catar</option>
+                                                                        <option>Roménia</option>
+                                                                        <option>África do Sul</option>
+                                                                        <option>Sudão</option>
+                                                                        <option>Suíça</option>
+                                                                        <option>Suriname</option>
+                                                                        <option>Eslováquia</option>
+                                                                        <option>Suécia</option>
+                                                                        <option>Essuatíni</option>
+                                                                        <option>Síria</option>
+                                                                        <option>Tanzânia</option>
+                                                                        <option>Tonga</option>
+                                                                        <option>Tailândia</option>
+                                                                        <option>Tajiquistão</option>
+                                                                        <option>Uruguai</option>
+                                                                        <option>Estados Unidos</option>
+                                                                        <option>Venezuela</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>    
+
+                                                        </div>
+                                                        
+
+
+                                                        <div class="form-row">
+                                                            <div class="col-md-12"><h5 class="text font-weight-light my-3">Dados de Contato</h5></div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Tipo de Telefone</label>
+                                                                    <select id="tipoTelefone" name="tipoTelefone" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>Celular</option>
+                                                                        <option>Residencial</option>
+                                                                        
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Telefone</label>
+                                                                    <input class="form-control py-3" id="telefone" name="telefone" type="text" placeholder="Telefone" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Tipo de Telefone</label>
+                                                                    <select id="tipoTelefone" name="tipoTelefone" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>Celular</option>
+                                                                        <option>Residencial</option>
+                                                                        
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Telefone</label>
+                                                                    <input class="form-control py-3" id="telefone" name="telefone" type="text" placeholder="Telefone" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Tipo de Telefone</label>
+                                                                    <select id="tipoTelefone" name="tipoTelefone" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>Celular</option>
+                                                                        <option>Residencial</option>
+                                                                        
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Telefone</label>
+                                                                    <input class="form-control py-3" id="telefone" name="telefone" type="text" placeholder="Telefone" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Tipo de Telefone</label>
+                                                                    <select id="tipoTelefone" name="tipoTelefone" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>Celular</option>
+                                                                        <option>Residencial</option>
+                                                                        
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Telefone</label>
+                                                                    <input class="form-control py-3" id="telefone" name="telefone" type="text" placeholder="Telefone" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1">CEP<i class="fas fa-search" style="margin-left: 10px;"  onclick="pesquisacep(cep.value);"></i></label>
+                                                                    <input class="form-control py-3" id="cep" name="cep" type="text" onblur="pesquisacep(this.value);"/>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Tipo de Logradouro</label>
+                                                                    <input class="form-control py-3" id="tipoLogradouro" name="tipoLogradouro" type="text" placeholder="Tipo de Logradouro" />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Logradouro</label>
+                                                                    <input class="form-control py-3" id="logradouro" name="logradouro" type="text" placeholder="Nome do Logradouro" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputFirstName">Número </label>
+                                                                    <input class="form-control py-3" id="numeroEndereco" name="numeroEndereco" type="text" placeholder="Nº do Local" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Complemento</label>
+                                                                    <input class="form-control py-3" id="complemento" name="complemento" type="text" placeholder="Complemento" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputFirstName">Bairro </label>
+                                                                    <input class="form-control py-3" id="bairro" name="bairro" type="text" placeholder="Bairro" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="form-row">
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputLastName">Cidade</label>
+                                                                    <input class="form-control py-3" id="cidade" name="cidade" type="text" placeholder="Cidade" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">Estado</label>
+                                                                    <select id="estado" name="estado" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option>Acre</option>
+                                                                        <option>Alagoas</option>
+                                                                        <option>Amapá</option>
+                                                                        <option>Amazonas</option>
+                                                                        <option>Bahia</option>
+                                                                        <option>Ceará</option>
+                                                                        <option>Distrito Federal</option>
+                                                                        <option>Espírito Santo</option>
+                                                                        <option>Goiás</option>
+                                                                        <option>Maranhão</option>
+                                                                        <option>Mato Grosso</option>
+                                                                        <option>Mato Grosso do Sul</option>
+                                                                        <option>Minas Gerais</option>
+                                                                        <option>Pará</option>
+                                                                        <option>Paraíba</option>
+                                                                        <option>Paraná</option>
+                                                                        <option>Pernambuco</option>
+                                                                        <option>Piauí</option>
+                                                                        <option>Rio de Janeiro</option>
+                                                                        <option>Rio Grande do Norte</option>
+                                                                        <option>Rio Grande do Sul</option>
+                                                                        <option>Rondônia</option>
+                                                                        <option>Roraima</option>
+                                                                        <option>Santa Catarina</option>
+                                                                        <option>São Paulo</option>
+                                                                        <option>Sergipe</option>
+                                                                        <option>Tocantins</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        
+                                                        <div class="form-row">    
+                                                            <div class="col-md-6">
+                                                                <div class="form-group">
+                                                                    <label class="small mb-1" for="inputState">UF</label>
+                                                                    <select id="uf" name="uf" class="form-control">
+                                                                        <option disabled selected hidden></option>
+                                                                        <option >AC</option>
+                                                                        <option >AL</option>
+                                                                        <option >AP</option>
+                                                                        <option>AM</option>
+                                                                        <option>BA</option>
+                                                                        <option>CE</option>
+                                                                        <option>DF</option>
+                                                                        <option>ES</option>
+                                                                        <option>GO</option>
+                                                                        <option>MA</option>
+                                                                        <option>MT</option>
+                                                                        <option>MS</option>
+                                                                        <option>MG</option>
+                                                                        <option>PA</option>
+                                                                        <option>PB</option>
+                                                                        <option>PR</option>
+                                                                        <option>PE</option>
+                                                                        <option>PI</option>
+                                                                        <option>RJ</option>
+                                                                        <option>RN</option>
+                                                                        <option>RS</option>
+                                                                        <option>RO</option>
+                                                                        <option>RR</option>
+                                                                        <option>SC</option>
+                                                                        <option>SP</option>
+                                                                        <option>SE</option>
+                                                                        <option>TO</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <h6 class="text-justify lead text-center mb-0" style="font-size: 13px; font-weight: bolder;"><br>INSIRA FOTO/PDF DOS SEGUINTES DOCUMENTOS:</h6>    
+
+                                    <h6 class="text-justify lead text-center" style="font-size: 10px; font-weight: bolder;"><br>REPITA O DOCUMENTO CASO NECESSÁRIO
+                                        <span data-toggle="tooltip" data-placement="right" title="Mesmo que um documento esteja inserido dentro de outro, como o CPF no RG, é necessário uma foto para cada documento">[&#63;]</span>                                
+                                        <br><br></h6>
+
+
+                                        <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                              <label for="exampleFormControlFile1">RG/RNE</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                            </div>
+                                    </div>                                  
+                                          
+                                    <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                              <label for="exampleFormControlFile1">CPF/CNPJ</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                            </div>
+                                    </div> 
+
+                                        
+
+                                    <div class="form-row">
+
+                                            <div class="form-group col-md-6">
+                                              <label for="exampleFormControlFile1">COMPROVANTE DE RESIDÊNCIA</label>
+                                              <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                                            </div>
+                                    </div>
+                                          
+
+                                        
+  
+                                                                      
+                                        <div class="col-md-1," style="display : flex; justify-content : center; align-items : center; flex-direction : initial;">
+                                            
+                                            <div class="form-group mt-4 mb-0"><button class="btn btn-success btn-block" type="submit" onclick="return validar()">Cadastrar</button></div>
+                                    
+                                    </div>
+                                
+                                
+                                </form>
+
+                                                </div>
+                                                <div class="card-footer text-center">
+                                                    <div class="small">
+                                                        <a class="text-success" href="login.html">Já possui uma conta? Faça login!</a>
+                                                    </div>
+                                                
+                                                </div>
+
+                                            </div>
+                                            <br><br><br>
+                                        </div>
+                                    </div>
+                                </div>
+
+            </main>
+
+            <script type="text/javascript" src="js/scripts.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+            <script src="js/scripts.js"></script>
+            <script src="js/resilia.js"></script>
+            <script type="text/javascript" src="js/popper.min.js"></script>
+            <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+
+    </body>
+</html>

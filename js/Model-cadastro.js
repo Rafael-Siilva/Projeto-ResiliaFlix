@@ -1,11 +1,14 @@
 class ModelCadastro {
     constructor(){
-        this.cep 
+        this.cep
+        this.logradouro 
 
     }
 
     processaCep(cep){
+
         cep = '01001000';
+        this.logradouro = 'Rio de Janeiro'
         let recebe =  `http://viacep.com.br/ws/${cep}/json/`
         let requestCep = new XMLHttpRequest();
 
@@ -30,6 +33,14 @@ class ModelCadastro {
         this.cep = dadosCep.cep
     }
 
+    atualizaDadosLogradouro(dadosLogradouro){
+        this.logradouro = dadosLogradouro.logradouro
+    }
+
+    getLogradouro(){
+        return this.logradouro;
+    }
+
     getCep(){
         return this.cep;
     }
@@ -37,3 +48,4 @@ class ModelCadastro {
 let cadastro = new ModelCadastro();
 console.log(cadastro.processaCep());
 console.log(cadastro.getCep());
+console.log(cadastro.getLogradouro());
