@@ -17,9 +17,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!--NAV_BAR-->
+   
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light  nav-letter">
+       <!--NAV_BAR-->
+      <nav class="navbar navbar-expand-lg   nav-letter fixed-top nav-background">
         <a class="navbar-brand" href="#">ResiliaFlix</a>
         <button
           class="navbar-toggler"
@@ -33,7 +34,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse d-flex justify-content-end"
+          class="collapse navbar-collapse justify-content-end"
           id="navbarNav"
         >
           <ul class="navbar-nav">
@@ -55,10 +56,11 @@
         </div>
       </nav>
     </header>
-
+   
     <!---CARROUSSEL-->
-  </main>
-      <section
+ 
+    <section class="carrousel">
+      <div
         id="carouselExampleCaptions"
         class="carousel slide"
         data-interval="3000"
@@ -127,8 +129,10 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </section>
-      <section id="titulo">
+      </div>
+    </section>
+      
+    <section id="titulo">
       <h1 class="text-center fonte-titulo cor-especial pt-5">
         Baixe séries para assistir offline
       </h1>
@@ -137,23 +141,23 @@
         pagar a mais por isso
       </p>
     </section>
+ 
       <!----INSERÇÂO DE CARDS-->
 
-      <section class="container" id="filmes">
-        <div class="row">
+  <section class="container" id="filmes" >
+    <div class="row justify-content-center">
 
-      <items class="card borda-cor-especial card-largura col-md-2" >
+      <items class="card borda-cor-especial card-largura p-0 m-4  col-md-3" >
         <img src="src/carroussel/bladeRunner.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">BladeRunner</h5>
-          <p class="card-text">
-            
+          <p class="card-text"> 
           </p>
           <a href="#" class="btn botao-cor-especial">Veja Mais</a>
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura" >
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3" >
         <img src="src/carroussel/marvell.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">capitâ_Marvel</h5>
@@ -163,7 +167,7 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/carroussel/comedia.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">comedia_Musical</h5>
@@ -174,29 +178,27 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/carroussel/coringa.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Coringa</h5>
           <p class="card-text">
-            
           </p>
           <a href="#" class="btn botao-cor-especial">Veja Mais</a>
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura" >
+      <items class="card borda-cor-especial card-largura p-0 m-4  col-md-3" >
         <img src="src/carroussel/divertidamente.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Divertidamente</h5>
           <p class="card-text">
-           
           </p>
           <a href="#" class="btn botao-cor-especial">Veja Mais</a>
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/img/Drama.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Drama</h5>
@@ -207,7 +209,7 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/carroussel/hamilton.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Hamilton</h5>
@@ -218,7 +220,7 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/carroussel/harryPotters.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">harryPotters</h5>
@@ -229,7 +231,7 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/carroussel/jasonx.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">JasonX</h5>
@@ -240,7 +242,7 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/carroussel/moana.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">Moana</h5>
@@ -251,7 +253,7 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura" >
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3" >
         <img src="src/carroussel/reiLeao.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">reiLeão</h5>
@@ -262,7 +264,7 @@
         </div>
       </items>
 
-      <items class="card borda-cor-especial card-largura">
+      <items class="card borda-cor-especial card-largura p-0 m-4 col-md-3">
         <img src="src/carroussel/toystory.jpg" class="card-img-top card-posicao-imagem" alt="..." />
         <div class="card-body">
           <h5 class="card-title">toyStory4</h5>
@@ -271,14 +273,18 @@
           <a href="#" class="btn botao-cor-especial">Veja Mais</a>
         </div>
       </items>
-    </div>
-      </section>
+      </div>
+  </section>
+<main>
 
-      </main>
-  
-      contato:
+<footer  class="fundo-rodape p-3">
+  contato:
+      <p>
       <a href="mailto:resiliaflix@resilia.com.br">email@resiliaflix.com</a>
     </p>
+</footer>
+  
+     
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
