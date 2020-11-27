@@ -8,13 +8,18 @@ header {
     width: 100%;
 }
 
+.td {
+    margin-top: 77px;
+}
+
 .botao-pesquisa {
-    width: 180px;
+    margin-right: 20px;
+    width: 270px;
     z-index: 1;
 }
 
 .t {
-    width: 182px;
+    width: 270px;
     background: #f5ce0e;
     position: absolute;
 }
@@ -25,9 +30,17 @@ header {
     font-size: 17px;
 }
 
+.font {
+    font-family: 'Crete Round', serif;
+}
+
 .navbar-brand {
     font-size: 33px;
     color: #f5ce0e !important;
+}
+
+section.tm {
+    margin-top: 77px;
 }
 
 body {
