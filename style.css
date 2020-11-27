@@ -3,8 +3,9 @@ header {
   font-size: 35px;
   background-color: #212529;
 }
-.nav-link {
-  background-color: #212529;
+
+.nav-background {
+  background: #212529;
 }
 
 .letter-color {
@@ -22,10 +23,6 @@ body {
 
 .navbar-toggler {
   color: #fddb3a;
-}
-
-.card-largura {
-  width: 18rem;
 }
 
 .imagem-carroussel {
@@ -56,5 +53,13 @@ body {
 .card-posicao-imagem {
   object-position: 0 15%;
   /*object-fit: cover;*/
-  height: 200px;
+  height: 180px;
+}
+.card-largura {
+  max-width: 18rem;
+}
+
+.fundo-rodape {
+  background: #222831;
+  color: white;
 }
