@@ -8,13 +8,22 @@ header {
     width: 100%;
 }
 
+.td {
+    margin-top: 70px;
+}
+
+.tf {
+    margin-top: 30px;
+}
+
 .botao-pesquisa {
-    width: 180px;
+    margin-right: 20px;
+    width: 270px;
     z-index: 1;
 }
 
 .t {
-    width: 182px;
+    width: 270px;
     background: #f5ce0e;
     position: absolute;
 }
@@ -25,9 +34,17 @@ header {
     font-size: 17px;
 }
 
+.font {
+    font-family: 'Crete Round', serif;
+}
+
 .navbar-brand {
     font-size: 33px;
     color: #f5ce0e !important;
+}
+
+section.tm {
+    margin-top: 77px;
 }
 
 body {
@@ -76,6 +93,40 @@ body {
     height: 200px;
 }
 
-.color {
-    color: #9b9b9b;
+footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.034);
+    color: #B5B5B5;
+    text-decoration: none;
+}
+
+div.rodape {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: auto;
+    padding: 50px;
+}
+
+div.rodape p {
+    color: #B5B5B5;
+    font-size: 11px;
+    text-decoration: none;
+}
+
+.icone {
+    padding-right: 10px;
+}
+
+.as {
+    text-decoration: none;
+    color: #B5B5B5;
+}
+
+section h2 {
+    padding-left: 4.6%;
+    margin-bottom: 13px;
+    color: rgba(255, 255, 255, 0.973) !important;
+    font-family: 'Crete Round', serif;
+    font-size: 22px;
 }

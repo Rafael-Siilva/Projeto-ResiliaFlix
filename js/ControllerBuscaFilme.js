@@ -1,10 +1,7 @@
 class ControllerBuscaFilme {
 
     adiciona() {
-
-        console.log("di")
-
-        let nomePesquisa = document.getElementById('nome')
+        var nomePesquisa = document.getElementById('filme')
         let model = new ModelResiliaFlix()
         model.buscarDados(nomePesquisa.value)
 
