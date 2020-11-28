@@ -39,6 +39,7 @@ header {
 }
 
 .navbar-brand {
+    font-family: 'Lobster Two', cursive;
     font-size: 33px;
     color: #f5ce0e !important;
 }
