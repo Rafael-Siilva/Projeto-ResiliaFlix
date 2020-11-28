@@ -1,10 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 header {
     font-family: 'Lobster Two', cursive;
-}
-
-.imagem-pesquisa {
-    width: 100%;
+    background: #1a1c20;
 }
 
 .td {
@@ -13,18 +10,6 @@ header {
 
 .tf {
     margin-top: 30px;
-}
-
-.botao-pesquisa {
-    margin-right: 20px;
-    width: 270px;
-    z-index: 1;
-}
-
-.t {
-    width: 270px;
-    background: #f5ce0e;
-    position: absolute;
 }
 
 .letter-color {
@@ -123,10 +108,78 @@ div.rodape p {
     color: #B5B5B5;
 }
 
-section h2 {
-    padding-left: 4.6%;
+h2 {
     margin-bottom: 13px;
     color: rgba(255, 255, 255, 0.973) !important;
     font-family: 'Crete Round', serif;
     font-size: 22px;
+}
+
+div.container-h2 {
+    width: 210px;
+    margin: auto;
+}
+
+@media (max-width: 767px) {
+    /*rodape*/
+    div.rodape {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
+    div.rodape p {
+        padding-bottom: 2%;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+
+.div-mostra-pesquisa {
+    background: #222831;
+    height: 170px;
+}
+
+.imagem-pesquisa {
+    width: 100px;
+    height: 140px;
+}
+
+.botao-pesquisa {
+    margin-right: 20px;
+    width: 270px;
+    z-index: 1;
+}
+
+.t {
+    display: flex;
+    width: 270px;
+    position: absolute;
+}
+
+.titulo-pesquisa {
+    width: 150px;
+    display: inline-block;
+    /*jogar conteudo pra cima*/
+    vertical-align: top;
+    /*jogando texto pra cima*/
+    position: relative;
+    top: 0px;
+    padding-left: 4px;
+    font-size: 14px;
+}
+
+.input-b:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+    background: #eeeeee;
+}
+
+.input-b {
+    background: #eeeeee;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: #eeeeee;
+    height: 34px;
 }

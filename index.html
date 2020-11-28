@@ -13,7 +13,7 @@
 <body onclick="controlador.remove()">
     <!--NAV_BAR-->
     <header class="fixed-top ">
-        <div class="container d-flex"></div>
+        <div class="container d-flex gf"></div>
         <nav class="navbar navbar-expand-lg navbar-light nav-letter">
             <a class="navbar-brand ml-3" href="index.html">ResiliaFlix</a>
 
@@ -35,12 +35,13 @@
                         <a class="nav-link letter-color" href="contato.html">Contato</a>
                     </li>
                 </ul>
+
                 <!-- botao pesquisa -->
                 <div class="botao-pesquisa font">
                     <div class="input-group ">
-                        <input type="text" class="form-control" placeholder="Pesquisar" autocomplete="off" data-toggle="collapse" data-target="#navbarToggleExternalContent" onkeyup="controlador.adiciona()" id="filme">
+                        <input type="text" class="form-control input-b " placeholder="Pesquisar" autocomplete="off" data-toggle="collapse" data-target="#navbarToggleExternalContent" onkeyup="controlador.adiciona()" id="filme">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-secondary bg-dark" type="button" id="button-addon2"><img src="img/pesquisa.png" alt=""></button>
+                            <button class=" input-b" type="button" disabled id="button-addon2"><img src="img/magnifying-glass.png" alt=""></button>
                         </div>
                     </div>
                     <div class="collapse t" id="navbarToggleExternalContent">
@@ -104,11 +105,15 @@
                 Assista quando quiser, no celular, tablet, smart TV ou notebook sem pagar a mais por isso
             </p>
         </section>
-        <!----INSERÇÂO DE CARDS-->
 
+
+        <!----INSERÇÂO DE CARDS-->
         <section class="container-fluid" id="filmes">
-            <h2>Filmes do ResiliaFlix</h2>
+            <div class="container-h2">
+                <h2>Filmes do ResiliaFlix</h2>
+            </div>
             <div class="row justify-content-center">
+
                 <items class="card borda-cor-especial card-largura p-0 mx-2 mb-4 ">
                     <img src="src/carroussel/bladeRunner.jpg" class="card-img-top card-posicao-imagem" alt="..." />
                     <div class="card-body">
@@ -253,10 +258,11 @@
                 </p>
             </div>
             <nav>
+                <a href=" "><img src="img/youtube.png " alt=" " class="icone "></a>
                 <a href=" "><img src="img/facebook (2).png " alt=" " class="icone "></a>
                 <a href=" "><img src="img/instagram (1).png " alt=" " class="icone "></a>
                 <a href=" "><img src="img/twitter (1).png " alt=" " class="icone "></a>
-                <a href=" "><img src="img/youtube.png " alt=" " class="icone "></a>
+
             </nav>
         </div>
     </footer>

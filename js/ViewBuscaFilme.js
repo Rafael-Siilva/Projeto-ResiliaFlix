@@ -5,17 +5,17 @@ class ViewBuscaFilme {
     pequisaFilme(result) {
 
         //cria tag da div dos filmes
-        this.mostra.innerHTML = `<div class=" p-1">
-        <h5 class="letter-color" id="titulo"></h5>
-        <span class="letter-color" id="ano"></span>
+        this.mostra.innerHTML = `<div id="div-p" class="letter-color p-2  pt-3 div-mostra-pesquisa">
+        <span class="letter-color" id="img" ></span>
+        <div class="letter-color titulo-pesquisa" id="titulo"></div>
     </div>`
 
         //pegando elemento da API e mostrando na tag criada
-        let img = document.getElementById('ano')
+        let img = document.getElementById('img')
         let titulo = document.getElementById('titulo')
-        let ano = document.getElementById('ano')
-        titulo.textContent = `${result.getTitulo()}`
-        img.innerHTML = `<img src="${result.getPoster()}" alt="" class="imagem-pesquisa">`
+
+        img.innerHTML = ` <a href="#" onclick="controlaImagem.NovoFilme('${result.getTitulo()}')"><img src="${result.getPoster()}" alt="" class="imagem-pesquisa"></a>`
+        titulo.innerHTML = ` ${result.getTitulo()}  (${result.getAno()})`
 
 
     }

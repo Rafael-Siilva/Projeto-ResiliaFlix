@@ -5,6 +5,7 @@ class ControllerBuscaFilme {
     }
 
     adiciona() {
+
         //mostra barra do filme pesquisado
         this.mostra.style.display = 'block';
 

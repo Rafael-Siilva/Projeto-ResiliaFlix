@@ -13,6 +13,21 @@ body {
     text-align: center;
 }
 
-.a {
-    background: firebrick;
+.h {
+    padding-left: 100px;
+}
+
+@media (max-width: 765px) {
+    .h {
+        padding-left: 20px;
+    }
+    #botao-cadastro {
+        width: 190px;
+        height: 50px;
+    }
+    .botao-div {
+        width: 91.2%;
+        text-align: center;
+        margin: auto;
+    }
 }
