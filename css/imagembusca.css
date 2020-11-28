@@ -1,0 +1,49 @@
+.imagem-filme {
+    background: red;
+    width: 330px;
+    height: 98.5%;
+    margin-top: 10px;
+}
+
+.imagem-imagem {
+    width: 95%;
+    height: 100%;
+}
+
+.div-imagembusca {
+    background: green;
+    height: 580px;
+}
+
+.botao-buscaimagem {
+    display: inline-block;
+    width: 50%;
+    /*jogar conteudo pra cima*/
+    vertical-align: bottom;
+    /*jogando texto pra cima*/
+    position: absolute;
+    z-index: 1;
+    bottom: -19px;
+    background: blue;
+}
+
+@media(max-width:770px) {
+    .imagem-filme {
+        background: red;
+    }
+    .div-imagembusca {
+        display: flex;
+        flex-direction: column;
+        background: green;
+        position: relative;
+    }
+    .botao-buscaimagem {
+        background: blue;
+    }
+    .media-body {
+        background: pink;
+    }
+    .media {
+        display: block;
+    }
+}

@@ -1,13 +1,8 @@
 class ModelResiliaFlix {
     constructor() {
         this._imagem = "";
-<<<<<<< HEAD
-        this._titulo = "Titulo não encontrado"
-        this._ano = "Sem ano"
-=======
-        this._titulo = "";
-        this._ano = "";
->>>>>>> 33c54b56b0c424e6f917b9d9cac995fb6b122969
+        this._titulo = "titulo não encontrado";
+        this._ano = "ano";
         this._classificacao = "";
         this._duracao = "";
         this._genero = "";
@@ -48,12 +43,11 @@ class ModelResiliaFlix {
 
     }
 
-<<<<<<< HEAD
     atualizaDados(x) {
 
         this._imagem = x.Poster;
         this._titulo = x.Title
-        this._ano = x.Year
+        this._ano = x.Year;
         this._classificacao = x.Rated;
         this._duracao = x.Runtime;
         this._genero = x.Genre;
@@ -63,83 +57,22 @@ class ModelResiliaFlix {
         this._idioma = x.Language;
         this._país = x.Country;
         this._premios = x.Awards;
-=======
-    atualizaDados(dados) {
-        this._imagem = dados.Poster;
-        this._titulo = dados.Title;
-        this._ano = dados.Year;
-        this._classificacao = dados.Rated;
-        this._duracao = dados.Runtime;
-        this._genero = dados.Genre;
-        this._diretor = dados.Director;
-        this._atores = dados.Actors;
-        this._enredo = dados.Plot;
-        this._idioma = dados.Language;
-        this._país = dados.Country;
-        this._premios = dados.Awards;
->>>>>>> 33c54b56b0c424e6f917b9d9cac995fb6b122969
     }
 
     //conteudo vindo da API
-    getPoster() {
-        return this._imagem
-    }
-
     getTitulo() {
         return this._titulo
-<<<<<<< HEAD
-    }
-
-    get getAno() {
-        return this._ano
-    }
-    getPoster() {
-        return this._imagem
-    }
-    getClassificacao() {
-        return this._classificacao
-    }
-=======
     }
 
     getAno() {
         return this._ano
     }
-
+    getPoster() {
+        return this._imagem
+    }
     getClassificacao() {
         return this._classificacao
     }
-
-    getDuracao() {
-        return this._duracao
-    }
-
-    getGenero() {
-        return this._genero
-    }
-
-    getDiretor() {
-        return this._diretor
-    }
-
-    getAtores() {
-        return this._atores
-    }
-
-    getEnredo() {
-        return this._enredo
-    }
-
-    getPais() {
-        return this._país
-    }
-
-    getPremios() {
-        return this._premios
-    }
-
-}
->>>>>>> 33c54b56b0c424e6f917b9d9cac995fb6b122969
 
     getDuracao() {
         return this._duracao
