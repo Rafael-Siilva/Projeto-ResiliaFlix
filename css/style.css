@@ -1,132 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&display=swap');
 header {
-    font-family: 'Lobster Two', cursive;
-    background-color: #212529;
+  font-family: 'Lobster Two', cursive;
+  background-color: #212529;
 }
 
 .imagem-pesquisa {
-    width: 100%;
+  width: 100%;
 }
 
 .td {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .tf {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .botao-pesquisa {
-    margin-right: 20px;
-    width: 270px;
-    z-index: 1;
+  margin-right: 20px;
+  width: 270px;
+  z-index: 1;
 }
 
 .t {
-    width: 270px;
-    background: #f5ce0e;
-    position: absolute;
+  width: 270px;
+  background: #f5ce0e;
+  position: absolute;
 }
 
 .letter-color {
-    color: rgba(255, 255, 255, 0.973) !important;
-    font-family: 'Crete Round', serif;
-    font-size: 17px;
+  color: rgba(255, 255, 255, 0.973) !important;
+  font-family: 'Crete Round', serif;
+  font-size: 17px;
 }
 
 .font {
-    font-family: 'Crete Round', serif;
+  font-family: 'Crete Round', serif;
 }
 
 .navbar-brand {
-    font-size: 33px;
-    color: #f5ce0e !important;
+  font-size: 33px;
+  color: #f5ce0e !important;
 }
 
 section.tm {
-    margin-top: 77px;
+  margin-top: 77px;
 }
 
 body {
-    /* background-image: Linear-gradient(To Top, #222831, #222831); */
-    background: #222831;
-    font-family: 'Crete Round', serif;
+  /* background-image: Linear-gradient(To Top, #222831, #222831); */
+  background: #222831;
+  font-family: 'Crete Round', serif;
 }
 
 .navbar-toggler {
-    color: #fddb3a;
+  color: #fddb3a;
 }
 
 .card-largura {
-    width: 18rem;
+  width: 18rem;
 }
 
 .imagem-carroussel {
-    object-position: 0 5%;
-    object-fit: cover;
-    height: 400px;
+  object-position: 0 5%;
+  object-fit: cover;
+  height: 400px;
 }
 
 .fonte-titulo {
-    font-family: 'Lobster Two', cursive;
-    color: #fddb3a;
-    font-size: 30px;
+  font-family: 'Lobster Two', cursive;
+  color: #fddb3a;
+  font-size: 30px;
 }
 
 .cor-especial {
-    color: #fddb3a;
-    font-size: 25px;
+  color: #fddb3a;
+  font-size: 25px;
 }
 
 .botao-cor-especial {
-    background-color: #222831;
-    color: #eeeeee;
+  background-color: #222831;
+  color: #eeeeee;
 }
 
 .borda-cor-especial {
-    border-color: #222831;
+  border-color: #222831;
 }
 
 .card-posicao-imagem {
-    object-position: 0 15%;
-    /*object-fit: cover;*/
-    height: 200px;
+  object-position: 0 15%;
+  /*object-fit: cover;*/
+  height: 180px;
+}
+
+.card-largura {
+  max-width: 18rem;
 }
 
 footer {
-    border-top: 1px solid rgba(255, 255, 255, 0.034);
-    color: #B5B5B5;
-    text-decoration: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.034);
+  color: #b5b5b5;
+  text-decoration: none;
 }
 
 div.rodape {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 70%;
-    margin: auto;
-    padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: auto;
+  padding: 50px;
 }
 
 div.rodape p {
-    color: #B5B5B5;
-    font-size: 11px;
-    text-decoration: none;
+  color: #b5b5b5;
+  font-size: 11px;
+  text-decoration: none;
 }
 
 .icone {
-    padding-right: 10px;
+  padding-right: 10px;
 }
 
 .as {
-    text-decoration: none;
-    color: #B5B5B5;
+  text-decoration: none;
+  color: #b5b5b5;
 }
 
 section h2 {
-    padding-left: 4.6%;
-    margin-bottom: 13px;
-    color: rgba(255, 255, 255, 0.973) !important;
-    font-family: 'Crete Round', serif;
-    font-size: 22px;
+  padding-left: 4.6%;
+  margin-bottom: 13px;
+  color: rgba(255, 255, 255, 0.973) !important;
+  font-family: 'Crete Round', serif;
+  font-size: 22px;
 }

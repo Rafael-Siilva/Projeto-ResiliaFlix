@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/cepCadastro.js"></script>
+
+    <title>ResiliaFlix | Cadastro</title>
+</head>
+
+<body>
+
+    <!--NAV_BAR-->
+    <header class="fixed-top ">
+        <div class="container d-flex  gf"></div>
+        <nav class="navbar navbar-expand-lg navbar-light nav-letter">
+            <a class="navbar-brand ml-3" href="index.html">ResiliaFlix</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse  justify-content-end mr-3" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link letter-color" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link letter-color" href="login.html">Login<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link letter-color" href="cadastro.html">Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link letter-color" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <!-- botao pesquisa -->
+                <div class="botao-pesquisa font">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Pesquisar" autocomplete="off" data-toggle="collapse" data-target="#navbarToggleExternalContent" onkeyup="controlador.adiciona()" id="filme">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-secondary bg-dark" type="button" id="button-addon2"><img src="img/pesquisa.png" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="collapse t " id="navbarToggleExternalContent">
+                        <div class=" p-1">
+                            <h5 class="letter-color" id="titulo"></h5>
+                            <span class="letter-color" id="ano"></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- termina -->
+            </div>
+        </nav>
+        </div>
+    </header>
+
+
+    <!--Formulário-->
+
+    <form method="get" action="." class="border border-secondary d-flex justify-content-center align-items-center pt-3 pb-3 m-5 text-white">
+        <div class="h-25 d-inline-block align-items-center ">
+            <div class="form-row container ">
+                <div class="form-group col-md-5 ">
+                    <label for="validationTextarea">Nome</label>
+                    <input type="text" class="form-control" id="nome" required>
+                </div>
+                <div class="form-group col-md-1 "></div>
+                <div class="form-group col-md-5">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" class="form-control" id="sobrenome">
+                </div>
+
+                <div class="form-group col-md-5 ">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="exemplo@gmail.com">
+                </div>
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-5">
+                    <label for="inputPassword4">RG</label>
+                    <input type="text" class="form-control" id="rg" required placeholder="00.000.000-0">
+                </div>
+
+                <div class="form-group col-md-5">
+                    <label for="confirmar-senha">Senha</label>
+                    <input type="password" class="form-control" id="inputPassword4" required>
+
+                </div>
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-5">
+                    <label for="confirmar-senha">Confirmar senha</label>
+                    <input type="password" class="form-control" id="confirmar-senha" required>
+
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="inputEmail4">CEP</label>
+                    <input type="text" class="form-control" id="cep" onblur="pesquisacep(this.value);" value="" placeholder="000.000.00  ">
+                </div>
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-5">
+                    <label for="inputPassword4">Cidade</label>
+                    <input type="text" class="form-control" id="cidade" required>
+                </div>
+                <div class="form-group col-md-5">
+                    <label for="inputEmail4">Rua</label>
+                    <input type="text" class="form-control" id="rua">
+                </div>
+                <div class="form-group col-md-1"></div>
+                <div class="form-group col-md-5">
+                    <label for="inputPassword4">Estado</label>
+                    <input type="text" class="form-control" id="uf" required>
+                </div>
+                <div class="botao-div">
+
+                    <button id="botao-cadastro" type="submit" class="btn btn-secondary btn-lg bg-dark mb-2  mt-2">Cadastrar</button>
+                </div>
+
+            </div>
+
+
+        </div>
+    </form>
+
+
+</body>
+
+
+
+</html>
