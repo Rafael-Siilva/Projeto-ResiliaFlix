@@ -6,9 +6,19 @@ body {
 .container {
     width: 50%;
     background: white;
+    padding: 0;
 }
 
-.form-row {}
+.form-row {
+    width: 99%;
+    margin-left: 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+main {
+    margin-bottom: 10px;
+}
 
 #botao-cadastro {
     width: 255px;
@@ -30,21 +40,7 @@ body {
     color: black;
 }
 
-@media (max-width: 810px) {
-    .container {
-        width: 90%;
-    }
-    .h {
-        padding-left: 10%;
-        padding-right: 2%;
-    }
-}
-
 @media (max-width: 765px) {
-    .h {
-        padding-left: 10%;
-        padding-right: 10%;
-    }
     #botao-cadastro {
         width: 190px;
         height: 50px;
@@ -56,6 +52,9 @@ body {
     }
     .container {
         width: 90%;
+        padding: 0px;
     }
-    .botao-div {}
+    .form-row {
+        padding: 10px;
+    }
 }
