@@ -15,7 +15,7 @@ class ModelResiliaFlix {
 
     }
 
-    buscarDados(t) {
+    buscarDados(nome) {
 
         //nome filme procurado
 
@@ -23,7 +23,6 @@ class ModelResiliaFlix {
 
         let url = `http://www.omdbapi.com/`
         let request = new XMLHttpRequest();
-
         request.addEventListener('load', () => {
             if (request.status == 200) {
                 let guardaDados = this.processaDados(request.responseText)
@@ -32,7 +31,7 @@ class ModelResiliaFlix {
             }
         })
 
-        request.open('GET', `${url}?t=${t}&apikey=${apiKey}`, false)
+        request.open('GET', `${url}?t=${nome}&apikey=${apiKey}`, false)
         request.send();
 
     }

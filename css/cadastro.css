@@ -3,6 +3,13 @@ body {
     overflow-x: auto;
 }
 
+.container {
+    width: 50%;
+    background: white;
+}
+
+.form-row {}
+
 #botao-cadastro {
     width: 255px;
     height: 50px;
@@ -13,13 +20,30 @@ body {
     text-align: center;
 }
 
+.border {
+    border-radius: 10px;
+}
+
 .h {
-    padding-left: 100px;
+    /* padding-left: 13%;
+    padding-right: 5%; */
+    color: black;
+}
+
+@media (max-width: 810px) {
+    .container {
+        width: 90%;
+    }
+    .h {
+        padding-left: 10%;
+        padding-right: 2%;
+    }
 }
 
 @media (max-width: 765px) {
     .h {
-        padding-left: 20px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     #botao-cadastro {
         width: 190px;
@@ -29,5 +53,8 @@ body {
         width: 91.2%;
         text-align: center;
         margin: auto;
+    }
+    .container {
+        width: 90%;
     }
 }
