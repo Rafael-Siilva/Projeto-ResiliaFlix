@@ -1,49 +1,67 @@
-.imagem-filme {
-    background: red;
-    width: 330px;
-    height: 98.5%;
-    margin-top: 10px;
-}
-
-.imagem-imagem {
-    width: 95%;
-    height: 100%;
-}
-
-.div-imagembusca {
-    background: green;
-    height: 580px;
-}
-
-.botao-buscaimagem {
-    display: inline-block;
-    width: 50%;
-    /*jogar conteudo pra cima*/
-    vertical-align: bottom;
-    /*jogando texto pra cima*/
-    position: absolute;
-    z-index: 1;
-    bottom: -19px;
-    background: blue;
-}
-
-@media(max-width:770px) {
-    .imagem-filme {
-        background: red;
-    }
-    .div-imagembusca {
-        display: flex;
-        flex-direction: column;
-        background: green;
-        position: relative;
-    }
-    .botao-buscaimagem {
-        background: blue;
-    }
-    .media-body {
-        background: pink;
-    }
-    .media {
-        display: block;
-    }
-}
+            .imagem-filme {
+                /* background: red; */
+                width: 330px;
+                height: 98.5%;
+                margin-top: 10px;
+            }
+            
+            .imagem-imagem {
+                width: 95%;
+                height: 100%;
+            }
+            
+            .div-imagembusca {
+                /* background: green; */
+                height: 580px;
+            }
+            
+            .botao-buscaimagem {
+                display: inline-block;
+                width: 50%;
+                /*jogar conteudo pra cima*/
+                vertical-align: bottom;
+                /*jogando texto pra cima*/
+                position: absolute;
+                z-index: 1;
+                bottom: -19px;
+                /* background: blue; */
+            }
+            
+            @media(max-width:770px) {
+                .div-imagembusca {
+                    display: flex;
+                    flex-direction: column;
+                    /* background: green; */
+                    position: relative;
+                }
+                .botao-buscaimagem {
+                    /* background: blue; */
+                    position: relative;
+                    display: flex;
+                    justify-content: space-between;
+                    border: solid 1px transparent;
+                    border-radius: 10px;
+                    margin-block-end: 8px;
+                    width: 87%;
+                    text-align: center;
+                    bottom: 8px;
+                    flex-direction: column;
+                }
+                .btn-lg {
+                    margin-block-end: 2%;
+                }
+                .media-body {
+                    /* background: pink; */
+                }
+                .media {
+                    display: block;
+                }
+                div.rodape {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 70%;
+                    margin: auto;
+                    padding: 50px;
+                }
+            }
