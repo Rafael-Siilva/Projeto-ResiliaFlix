@@ -21,7 +21,7 @@ class ModelResiliaFlix {
 
         let apiKey = "79c661bb";
 
-        let url = `http://www.omdbapi.com/`
+        let url = `https://www.omdbapi.com/`
         let request = new XMLHttpRequest();
         request.addEventListener('load', () => {
             if (request.status == 200) {
