@@ -41,7 +41,6 @@ class ViewImagem {
             </div>
               </div>
               </div>
-             
               `
         a.appendChild(texto);
 

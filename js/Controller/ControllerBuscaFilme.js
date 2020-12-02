@@ -8,15 +8,12 @@ class ControllerBuscaFilme {
 
         //mostra barra do filme pesquisado
         this.mostra.style.display = 'block';
-
         let model = new ModelResiliaFlix()
-
         model.buscarDados(this.nomePesquisa.value)
 
 
 
         let visualiza = new ViewBuscaFilme()
-
         visualiza.pequisaFilme(model)
 
     }

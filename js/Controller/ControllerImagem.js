@@ -1,12 +1,9 @@
 class ControllerImagem {
-    constructor() {}
 
-    NovoFilme(p) {
-        console.log(p)
-        console.log('tô aqui')
+    NovoFilme(nome) {
 
         let Model = new ModelResiliaFlix();
-        Model.buscarDados(p);
+        Model.buscarDados(nome);
 
         let visual = new ViewImagem();
         visual.RecebeModelo(Model);

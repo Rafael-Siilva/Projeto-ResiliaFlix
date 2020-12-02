@@ -108,6 +108,11 @@ header {
 
 /* cards dos filmes */
 
+.h2-nome {
+    display: block;
+    background: #f5ce0e;
+}
+
 .borda-cor-especial {
     border-color: #222831;
 }
@@ -138,6 +143,9 @@ section.tm {
 .card-largura {
     width: 18rem;
 }
+
+
+/*  rodape*/
 
 footer {
     border-top: 1px solid rgba(255, 255, 255, 0.034);
